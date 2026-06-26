@@ -1,75 +1,129 @@
-🚀 AI Web App using Streamlit
-Loan Prediction + Image Color Quantization
+# 🚀 Loan Prediction & Image Color Quantization App
 
-This project is a multi-functional AI web application built using Streamlit.
-It combines:
+This is a **Machine Learning + Computer Vision web app** built using **Streamlit**.
+It performs:
 
-🏦 Loan Prediction System (Machine Learning)
-🎨 Image Color Quantization Tool (Computer Vision)
-🔥 Features
-🏦 Loan Prediction
-Takes user input (age, income, etc.)
-Uses trained ML model to predict:
-✅ Loan Approved
-❌ Loan Rejected
-🎨 Image Color Quantization
-Upload an image (JPG, PNG or anytype)
-Reduce number of colors using K-Means
-Displays:
-Original Image
-Quantized Image
-📦 Image size before & after
-⚡ Processing time
-🛠️ Tech Stack
-Frontend & App: Streamlit
-Machine Learning: Scikit-learn
-Data Handling: Pandas, NumPy
-Image Processing: matplotlib.image / Pillow
-Model Storage: Joblib / Pickle
-📁 Project Structure
-project/
-│── app.py                  # Main Streamlit app
-│── model.pkl              # Trained ML model
-│── requirements.txt       # Dependencies
-│── quantization.py        # Image processing logic (optional)
-│── README.md              # Project documentation
-⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-2️⃣ Install dependencies
-pip install pyproject.toml
-3️⃣ Run the app
-streamlit run app.py
-🌐 Deployment
+* 🏦 **Loan Approval Prediction**
+* 🎨 **Image Color Quantization (K-Means Clustering)**
 
-This app can be deployed easily using Streamlit Cloud:
+---
 
-Push your code to GitHub
-Go to: https://streamlit.io/cloud
-Click New App
-Select your repository
-Deploy 🚀
-📸 Screenshots (Optional)
+## 🌐 Live Demo
 
-You can add screenshots here after deployment.
+👉 **Working URL:**
+https://loanpredictionmlproject-dovahwqtcwkhzy76zadh5y.streamlit.app/
 
-💡 Future Improvements
-🔐 User authentication system
-📊 Better UI/UX design
-☁️ Cloud model integration
-📉 Advanced analytics
-🙌 Acknowledgment
+---
 
-This project is built as part of learning:
+## 📌 Features
 
-Machine Learning
-Streamlit App Development
-Real-world AI deployment
-📬 Contact
+### 🏦 Loan Prediction
 
-If you have suggestions or feedback, feel free to connect!
+* Predicts whether a loan will be **Approved or Rejected**
+* Uses trained ML model (`loan_classifier_pipeline.pkl`)
+* Takes user input like:
 
-⭐ If you like this project
+  * Income
+  * Loan Amount
+  * Credit History
+  * Education, Property Area, etc.
+* Displays **prediction + confidence score**
 
-Give it a ⭐ on GitHub!
+---
+
+### 🎨 Image Color Quantization
+
+* Upload any image
+* Reduce number of colors using **K-Means Clustering**
+* Compare:
+
+  * Original Image
+  * Quantized Image
+* Shows:
+
+  * 📦 Original Size
+  * 📦 Quantized Size
+  * ⚡ Processing Time
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **Streamlit**
+* **Scikit-learn**
+* **Pandas**
+* **Matplotlib**
+* **Pillow (PIL)**
+* **Joblib**
+
+---
+
+## 📂 Project Structure
+
+```
+├── main.py                      # Main Streamlit App
+├── color_quantization.py       # Image processing logic
+├── loan_classifier_pipeline.pkl # Trained ML model
+├── pyproject.toml              # Dependencies
+├── README.md
+```
+
+---
+
+## ⚙️ Installation (Local Setup)
+
+```bash
+git clone <your-repo-link>
+cd <project-folder>
+
+pip install -r requirements.txt   # OR use pyproject.toml
+
+streamlit run main.py
+```
+
+---
+
+## ☁️ Deployment
+
+This project is deployed using **Streamlit Cloud**.
+
+Steps:
+
+1. Push code to GitHub
+2. Go to Streamlit Cloud
+3. Select repo
+4. Set:
+
+   * **Main file:** `main.py`
+   * **Python version:** 3.13 (recommended)
+
+---
+
+## 📊 Learning Highlights
+
+* End-to-end ML project deployment
+* Feature engineering & preprocessing
+* Model pipeline usage
+* Streamlit UI development
+* Image processing using clustering
+
+---
+
+## 👨‍💻 Author
+
+**Prateek Agrawal**
+B.Tech AIML Student
+
+---
+
+## ⭐ Future Improvements
+
+* Add authentication system
+* Improve UI/UX
+* Add more ML models
+* Optimize image processing speed
+
+---
+
+⭐ If you like this project, give it a star!
